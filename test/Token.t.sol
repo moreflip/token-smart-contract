@@ -6,12 +6,12 @@ import {Token} from "../src/Token.sol";
 
 contract TokenTest is Test {
     Token token;
-    address owner = address(0x123);
-    address user1 = address(0x456);
-    address user2 = address(0x789);
+    address owner = address(0x123); // Initialize owner address
+    address user1 = address(0x456); // Initialize user1 address
+    address user2 = address(0x789); // Initialize user2 address
 
     function setUp() public {
-        token = new Token();
+        token = new Token();   
         vm.prank(owner);
         token.mint(owner, 1000 * 10 ** token.decimals());
     }
@@ -46,6 +46,6 @@ contract TokenTest is Test {
         uint256 balance = token.checkBalance(owner);
         assertEq(balance, 1000 * 10 ** token.decimals());
     }
-    
+
 
 }
