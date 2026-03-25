@@ -64,3 +64,6 @@ $ forge --help
 $ anvil --help
 $ cast --help
 ```
+
+
+RPC_URL=https://eth-sepolia.g.alchemy.com/v2/mIui_a1wAm33H7Ohj0rno
