@@ -1,0 +1,4 @@
+TokenTest:testBurn() (gas: 31626)
+TokenTest:testInitialBalance() (gas: 12508)
+TokenTest:testMint() (gas: 50816)
+TokenTest:testTransfer() (gas: 49210)
